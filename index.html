@@ -498,7 +498,7 @@
         }
 
         /* Desktop specific */
-        @media (min-width: 900px) {
+        @media (min-width: 1750px) {
             .container {
                 margin-top: 20px;
                 position: relative;
@@ -506,9 +506,17 @@
             
             .sidebar-widget {
                 position: fixed;
-                left: calc(50% + 220px);
+                left: calc(50% + 710px);
                 top: 80px;
                 display: block !important;
+            }
+
+            .sidebar-left {
+                position: fixed;
+                right: calc(50% + 710px);
+                top: 80px;
+                display: block !important;
+                z-index: 900;
             }
         }
     </style>
@@ -525,18 +533,6 @@
         <style> @keyframes slide-loader { from { left: -50%; } to { left: 100%; } } </style>
     </div>
 
-    <!-- TOP AD BAR -->
-    <div onclick="window.open(window.REFLINK, '_blank')" style="background: var(--accent-color); color: #000; padding: 10px; font-size: 0.7rem; font-family: 'Space Grotesk'; font-weight: 800; text-align: center; letter-spacing: 2px; cursor: pointer; position: relative; z-index: 1001; animation: pulse-bg 2s infinite;">
-        <i class="fas fa-bolt" style="margin-right: 8px;"></i> ACCESO PREMIUM: DESBLOQUEA CONTENIDO EXCLUSIVO SIN LÍMITES <i class="fas fa-bolt" style="margin-left: 8px;"></i>
-    </div>
-    <style>
-        @keyframes pulse-bg {
-            0% { background-color: var(--accent-color); }
-            50% { background-color: #fff; }
-            100% { background-color: var(--accent-color); }
-        }
-    </style>
-
     <header>
         <div class="header-content">
             <h1>MUSE <span>NETWORK</span></h1>
@@ -544,9 +540,22 @@
         <div id="scroll-progress" style="position: absolute; bottom: 0; left: 0; height: 1px; background: var(--accent-color); width: 0%; transition: width 0.1s linear;"></div>
     </header>
 
-    <!-- SIDEBAR WIDGET (DESKTOP) -->
+    <!-- SIDEBAR WIDGETS (DESKTOP) -->
     <div class="sidebar-widget" style="display: none;">
         <iframe src="https://creative.mavrtracktor.com/widgets/wrapper?userId=a703e07cc602c7aecb72a257e7ece3fff9655e7eab57b09d95e4be998475cce2&bb=ee70e061.gif" width="120" height="600" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <div class="sidebar-left" style="display: none;">
+        <script>
+            atOptions = {
+                'key' : '9afc45e3795274697cd821d3ba76c9a0',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+            };
+        </script>
+        <script src="https://www.highperformanceformat.com/9afc45e3795274697cd821d3ba76c9a0/invoke.js"></script>
     </div>
 
     <!-- HERO SECTION -->
@@ -629,11 +638,6 @@
                 </button>
             </div>
 
-            <!-- ADSTERRA NATIVE BANNER (HIGH VISIBILITY) -->
-            <div class="reveal" style="margin-bottom: 30px; text-align: center;">
-                <div id="container-5022ec883f867ae944b75fd3459fcd3d" style="display: inline-block; min-height: 250px; width: 100%; background: rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05);"></div>
-            </div>
-
             <!-- MOBILE SLIDER WIDGET -->
             <div style="margin: 20px 0; border-top: 1px solid #222; padding-top: 20px;">
                 <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 15px;">
@@ -650,6 +654,34 @@
     </div>
 
     <main class="container" id="feed" style="margin-top: 0;"></main>
+
+    <!-- ADSTERRA INTEGRATION (TRANSFERRED FROM HERO) -->
+    <div class="container reveal" style="text-align: center; margin-bottom: 40px;">
+        <div style="background: rgba(255,255,255,0.02); border-radius: 20px; padding: 30px; border: 1px solid rgba(255,255,255,0.1);">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 20px;">
+                <div style="height: 1px; width: 40px; background: var(--accent-color); opacity: 0.3;"></div>
+                <span style="font-family: 'Space Grotesk'; font-size: 0.7rem; letter-spacing: 3px; color: var(--accent-color); text-transform: uppercase;">Contenido Recomendado</span>
+                <div style="height: 1px; width: 40px; background: var(--accent-color); opacity: 0.3;"></div>
+            </div>
+            
+            <div id="container-5022ec883f867ae944b75fd3459fcd3d" style="display: inline-block; min-height: 250px; width: 100%; border-radius: 12px; overflow: hidden;"></div>
+            
+            <div style="margin-top: 30px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+                    <script>
+                        atOptions = {
+                            'key' : '9afc45e3795274697cd821d3ba76c9a0',
+                            'format' : 'iframe',
+                            'height' : 300,
+                            'width' : 160,
+                            'params' : {}
+                        };
+                    </script>
+                    <script src="https://www.highperformanceformat.com/9afc45e3795274697cd821d3ba76c9a0/invoke.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- FINAL MONETIZATION WIDGET -->
     <div style="width: 100%; max-width: 1400px; margin: 30px auto; border-top: 1px solid #222; padding-top: 20px; padding-bottom: 80px; padding-left: 15px; padding-right: 15px;">
@@ -1190,5 +1222,6 @@
     </script>
     <script async="async" data-cfasync="false" src="https://pl29339637.profitablecpmratenetwork.com/5022ec883f867ae944b75fd3459fcd3d/invoke.js"></script>
     <script src="https://pl29339589.profitablecpmratenetwork.com/ab/ed/ef/abedefbf65f6e5051259e2f9253a2a68.js"></script>
+    <script src="https://pl29339856.profitablecpmratenetwork.com/0b/30/4c/0b304c0222df50045cfe484a03b02e3a.js"></script>
 </body>
 </html>
